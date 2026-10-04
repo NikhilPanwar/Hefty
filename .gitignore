@@ -1,0 +1,18 @@
+# SwiftPM / Xcode
+.build/
+.swiftpm/
+DerivedData/
+*.xcodeproj/xcuserdata/
+*.xcworkspace/xcuserdata/
+
+# Build outputs (scripts/make-app.sh and make-dmg.sh write here)
+build/
+dist/
+*.app/
+*.dmg
+*.zip
+# ...except the published release image
+!release/*.dmg
+
+# macOS
+.DS_Store

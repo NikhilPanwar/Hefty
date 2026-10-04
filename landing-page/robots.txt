@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://nikhilpanwar.github.io/Hefty/sitemap.xml

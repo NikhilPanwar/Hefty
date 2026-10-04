@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Hefty Brand Sheet</title>
+<link rel="icon" href="hefty-icon-64.png">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;800;900&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+<style>
+  :root { --bg: #FFFAF2; --fg: #0E1A2B; --muted: #4A5873; --card: #FFFFFF; --line: #F0E3CC; }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) { --bg: #0B1322; --fg: #F4EEE4; --muted: #9AA7BD; --card: #14213A; --line: #22324F; }
+  }
+  :root[data-theme="dark"] { --bg: #0B1322; --fg: #F4EEE4; --muted: #9AA7BD; --card: #14213A; --line: #22324F; }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--fg); font: 16px/1.55 Inter, -apple-system, system-ui, sans-serif; }
+  .wrap { max-width: 980px; margin: 0 auto; padding: 40px 16px 64px; }
+  h1 { font-size: 44px; font-weight: 900; letter-spacing: -0.03em; margin: 0; }
+  h2 { font-size: 13px; text-transform: uppercase; letter-spacing: .12em; color: var(--muted); margin: 48px 0 16px; }
+  p { color: var(--muted); max-width: 44em; }
+  .card { background: var(--card); border: 1px solid var(--line); border-radius: 18px; padding: 24px; }
+  .row { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 16px; }
+  .logo { display: flex; align-items: center; gap: 16px; }
+  .logo img { width: 64px; } .logo b { font-size: 52px; font-weight: 900; letter-spacing: -0.03em; }
+  .logo.dark { background: #0E1A2B; color: #FFF4E2; }
+  .sw { border-radius: 14px; height: 96px; margin-bottom: 10px; border: 1px solid rgba(0,0,0,.06); }
+  .mono { font-family: "JetBrains Mono", ui-monospace, monospace; font-size: 13px; }
+  .icons { display: flex; align-items: end; gap: 20px; flex-wrap: wrap; }
+  .icons figure { margin: 0; text-align: center; font-size: 12px; color: var(--muted); }
+  ul { color: var(--muted); padding-left: 20px; } li { margin: 4px 0; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>Hefty brand sheet</h1>
+  <p>Hefty is a native Mac editor for huge text files. The mark is a kettlebell whose face is a page of text: heavy files, handled with ease. Tone is confident, plain and a little playful.</p>
+
+  <h2>Name and tagline</h2>
+  <div class="card">
+    <p style="margin:0 0 8px"><b style="color:var(--fg)">Hefty</b>. Always one word, capital H. "Hefty for Mac" when the platform matters.</p>
+    <p style="margin:0">Tagline: <b style="color:var(--fg)">The text editor for files too big for everything else.</b> Headline: <b style="color:var(--fg)">Open the file nothing else can.</b></p>
+  </div>
+
+  <h2>Logo</h2>
+  <div class="row">
+    <div class="card logo"><img src="hefty-mark.svg" alt=""><b>Hefty</b></div>
+    <div class="card logo dark"><img src="hefty-mark.svg" alt=""><b>Hefty</b></div>
+  </div>
+  <p>Wordmark: SF Pro Rounded Heavy in the app and DMG, Inter Black on the web. Keep clear space equal to the handle's thickness around the mark. Don't recolor the kettlebell, add outlines, or set the wordmark in a light weight.</p>
+
+  <h2>App icon</h2>
+  <div class="card icons">
+    <figure><img src="hefty-icon-1024.png" width="256" alt="Hefty icon"><figcaption>1024 / 512@2x</figcaption></figure>
+    <figure><img src="hefty-icon-256.png" width="128" alt=""><figcaption>128</figcaption></figure>
+    <figure><img src="hefty-icon-128.png" width="64" alt=""><figcaption>64</figcaption></figure>
+    <figure><img src="hefty-icon-64.png" width="32" alt=""><figcaption>32</figcaption></figure>
+    <figure><img src="hefty-icon-64.png" width="16" alt=""><figcaption>16</figcaption></figure>
+  </div>
+  <p>Generated from <span class="mono">scripts/make-icon.swift</span> on the macOS grid (824 pt tile in a 1024 canvas). Small sizes drop the text lines so the shape stays crisp. <span class="mono">Hefty.icns</span> holds all ten sizes.</p>
+
+  <h2>Color</h2>
+  <div class="row">
+    <div><div class="sw" style="background:#0E1A2B"></div><b>Ink</b><div class="mono">#0E1A2B</div><small>Text, dark surfaces</small></div>
+    <div><div class="sw" style="background:#1E2F4D"></div><b>Midnight</b><div class="mono">#1E2F4D</div><small>Icon tile, gradients</small></div>
+    <div><div class="sw" style="background:#FFA63D"></div><b>Amber</b><div class="mono">#FFA63D</div><small>Primary accent</small></div>
+    <div><div class="sw" style="background:#EE6A12"></div><b>Ember</b><div class="mono">#EE6A12</div><small>Gradient end, hover</small></div>
+    <div><div class="sw" style="background:#FFF4E2"></div><b>Cream</b><div class="mono">#FFF4E2</div><small>Light surfaces, DMG</small></div>
+    <div><div class="sw" style="background:#4A5873"></div><b>Slate</b><div class="mono">#4A5873</div><small>Secondary text</small></div>
+  </div>
+
+  <h2>Typography</h2>
+  <div class="row">
+    <div class="card"><div style="font-size:40px;font-weight:900;letter-spacing:-0.03em">Aa Inter</div><p>Headlines Black 900, UI and body 400 to 600. On macOS use SF Pro (Rounded Heavy for the wordmark).</p></div>
+    <div class="card"><div class="mono" style="font-size:32px;font-weight:600">Aa Mono</div><p>JetBrains Mono for code samples on the web; the app uses the system monospaced font (SF Mono).</p></div>
+  </div>
+
+  <h2>Files</h2>
+  <ul>
+    <li><span class="mono">hefty-mark.svg</span> vector kettlebell mark</li>
+    <li><span class="mono">hefty-icon-{1024,512,256,128,64}.png</span> app icon renders</li>
+    <li><span class="mono">Hefty.icns</span> macOS icon with every size</li>
+    <li><span class="mono">dmg-background.png</span>, <span class="mono">@2x</span> installer window art</li>
+    <li><span class="mono">index.html</span> one-page landing site</li>
+  </ul>
+</div>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="170 184 684 732">
+  <defs>
+    <linearGradient id="bell" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FFA63D"/><stop offset="1" stop-color="#EE6A12"/></linearGradient>
+    <radialGradient id="shine" cx="400" cy="484" r="260" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#fff" stop-opacity=".38"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></radialGradient>
+    <clipPath id="body"><circle cx="512" cy="644" r="300"/></clipPath>
+  </defs>
+  <rect x="250" y="264" width="524" height="330" rx="230" ry="165" fill="none" stroke="#E58A22" stroke-width="92"/>
+  <rect x="226" y="240" width="572" height="378" rx="254" ry="189" fill="none" stroke="#FFD08A" stroke-opacity=".55" stroke-width="14"/>
+  <g clip-path="url(#body)">
+    <rect x="200" y="300" width="624" height="606" fill="url(#bell)"/>
+    <rect x="200" y="854" width="624" height="52" fill="#C9550B"/>
+    <rect x="200" y="300" width="624" height="606" fill="url(#shine)"/>
+  </g>
+    <rect x="342" y="492" width="250" height="30" rx="15" fill="#0E1A2B" fill-opacity=".82"/>
+    <rect x="382" y="550" width="190" height="30" rx="15" fill="#0E1A2B" fill-opacity=".82"/>
+    <rect x="382" y="608" width="300" height="30" rx="15" fill="#0E1A2B" fill-opacity=".82"/>
+    <rect x="342" y="666" width="140" height="30" rx="15" fill="#0E1A2B" fill-opacity=".82"/>
+    <rect x="382" y="724" width="230" height="30" rx="15" fill="#0E1A2B" fill-opacity=".82"/>
+    <rect x="342" y="782" width="270" height="30" rx="15" fill="#0E1A2B" fill-opacity=".82"/>
+    <rect x="634" y="770" width="14" height="54" fill="#FFF4E2"/>
+</svg>

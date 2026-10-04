@@ -1,0 +1,67 @@
+<!doctype html><html><head><meta charset="utf-8">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600;800;900&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box} html,body{margin:0;width:1200px;height:630px;overflow:hidden}
+body{background:#0B1322;color:#FFF4E2;font-family:Inter,sans-serif;position:relative}
+.glow{position:absolute;inset:0;background:radial-gradient(520px 380px at 88% 30%,rgba(238,106,18,.30),transparent 70%),radial-gradient(600px 500px at 0% 0%,rgba(30,47,77,.9),transparent 70%)}
+.grid{position:absolute;inset:0;opacity:.35;background-image:linear-gradient(#22324F 1px,transparent 1px),linear-gradient(90deg,#22324F 1px,transparent 1px);background-size:40px 40px;-webkit-mask-image:radial-gradient(ellipse 70% 70% at 30% 40%,#000 10%,transparent 75%)}
+.left{position:absolute;left:72px;top:64px;width:560px}
+.brand{display:flex;align-items:center;gap:16px;font:900 40px/1 Inter;letter-spacing:-.03em}
+.brand svg{width:54px;height:58px}
+h1{font:900 70px/.98 Inter;letter-spacing:-.045em;margin:44px 0 0}
+h1 em{font-style:normal;background:linear-gradient(180deg,#FFA63D,#EE6A12);-webkit-background-clip:text;color:transparent}
+.sub{margin-top:22px;font:500 24px/1.4 Inter;color:#9AA7BD}
+.stats{display:flex;gap:14px;margin-top:34px}
+.st{border:1px solid #2A3A58;background:rgba(20,33,58,.8);border-radius:14px;padding:14px 18px}
+.st b{display:block;font:900 34px/1 Inter;letter-spacing:-.03em} .st b small{font-size:17px;color:#FFA63D;margin-left:3px;font-weight:800}
+.st span{display:block;margin-top:6px;font:500 15px/1.2 Inter;color:#9AA7BD}
+.url{position:absolute;left:72px;bottom:44px;font:500 18px/1 "JetBrains Mono",monospace;color:#5E6E8A}
+.url b{color:#FFA63D;font-weight:500}
+.win{position:absolute;left:690px;top:92px;width:640px;border-radius:14px;background:#0E1A2B;border:1px solid #2A3A58;box-shadow:0 40px 90px -30px #000,0 0 70px -25px rgba(238,106,18,.6);overflow:hidden;transform:rotate(-2deg);transform-origin:0 0}
+.tb{display:flex;align-items:center;gap:14px;padding:12px 16px;background:#101C30;border-bottom:1px solid #22324F;font:500 14px "JetBrains Mono",monospace;color:#9AA7BD}
+.tb i{width:12px;height:12px;border-radius:50%;background:#FF5F57;display:inline-block} .tb i:nth-child(2){background:#FEBC2E} .tb i:nth-child(3){background:#28C840}
+.tb .t{background:#14213A;color:#FFF4E2;padding:6px 10px;border-radius:6px;margin-left:6px}
+.code{padding:6px 0;font:400 14px/26px "JetBrains Mono",monospace;color:#D7DEEA;white-space:pre}
+.r{padding-left:0} .r.cur{background:rgba(255,255,255,.05)} .r.cur mark{background:#FFA63D;color:#1A0F02}
+.ln{display:inline-block;width:12ch;text-align:right;padding-right:1.6ch;color:#4C5C78}
+.kw{color:#FFB65C} .str{color:#8FD6A8} .num{color:#F38BA8}
+mark{background:rgba(255,209,102,.28);color:inherit;border-radius:3px}
+.sb{display:flex;gap:16px;padding:9px 16px;border-top:1px solid #22324F;background:#101C30;font:400 13px "JetBrains Mono",monospace;color:#9AA7BD}
+.sb strong{color:#FFF4E2;font-weight:500}
+</style></head><body><div class="glow"></div><div class="grid"></div>
+<div class="left">
+ <div class="brand"><svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="170 184 684 732">
+  <defs>
+    <linearGradient id="bell" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FFA63D"/><stop offset="1" stop-color="#EE6A12"/></linearGradient>
+    <radialGradient id="shine" cx="400" cy="484" r="260" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#fff" stop-opacity=".38"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></radialGradient>
+    <clipPath id="body"><circle cx="512" cy="644" r="300"/></clipPath>
+  </defs>
+  <rect x="250" y="264" width="524" height="330" rx="230" ry="165" fill="none" stroke="#E58A22" stroke-width="92"/>
+  <rect x="226" y="240" width="572" height="378" rx="254" ry="189" fill="none" stroke="#FFD08A" stroke-opacity=".55" stroke-width="14"/>
+  <g clip-path="url(#body)">
+    <rect x="200" y="300" width="624" height="606" fill="url(#bell)"/>
+    <rect x="200" y="854" width="624" height="52" fill="#C9550B"/>
+    <rect x="200" y="300" width="624" height="606" fill="url(#shine)"/>
+  </g>
+    <rect x="342" y="492" width="250" height="30" rx="15" fill="#0E1A2B" fill-opacity=".82"/>
+    <rect x="382" y="550" width="190" height="30" rx="15" fill="#0E1A2B" fill-opacity=".82"/>
+    <rect x="382" y="608" width="300" height="30" rx="15" fill="#0E1A2B" fill-opacity=".82"/>
+    <rect x="342" y="666" width="140" height="30" rx="15" fill="#0E1A2B" fill-opacity=".82"/>
+    <rect x="382" y="724" width="230" height="30" rx="15" fill="#0E1A2B" fill-opacity=".82"/>
+    <rect x="342" y="782" width="270" height="30" rx="15" fill="#0E1A2B" fill-opacity=".82"/>
+    <rect x="634" y="770" width="14" height="54" fill="#FFF4E2"/>
+</svg>
+Hefty</div>
+ <h1>Open the file nothing else <em>can.</em></h1>
+ <div class="sub">A free, open-source Mac editor for huge log files, SQL dumps, CSV and JSON.</div>
+ <div class="stats">
+  <div class="st"><b>&lt;3<small>sec</small></b><span>to open a 10 GB file</span></div>
+  <div class="st"><b>72<small>MB</small></b><span>RAM with it open</span></div>
+  <div class="st"><b>0.3<small>sec</small></b><span>to search 5.4 GB</span></div>
+ </div>
+</div>
+<div class="url">Free for macOS 13+</div>
+<div class="win"><div class="tb"><span><i></i> <i></i> <i></i></span><span class="t">prod_dump.sql</span><span>10.77 GB</span></div>
+<div class="code"><div class="r"><span class="ln">41,203,118</span><span class="kw">INSERT INTO</span> users <span class="kw">VALUES</span> (<span class="num">41203117</span>, <span class="str">'Asha Rao'</span>, <span class="str">'asha@<mark>example</mark>.com'</span>);</div><div class="r"><span class="ln">41,203,119</span><span class="kw">INSERT INTO</span> users <span class="kw">VALUES</span> (<span class="num">41203118</span>, <span class="str">'Leo Park'</span>, <span class="str">'leo@<mark>example</mark>.com'</span>);</div><div class="r"><span class="ln">41,203,120</span><span class="kw">INSERT INTO</span> users <span class="kw">VALUES</span> (<span class="num">41203119</span>, <span class="str">'Mira Chen'</span>, <span class="str">'mira@<mark>example</mark>.com'</span>);</div><div class="r"><span class="ln">41,203,121</span><span class="kw">INSERT INTO</span> users <span class="kw">VALUES</span> (<span class="num">41203120</span>, <span class="str">'Sam Okafor'</span>, <span class="str">'sam@<mark>example</mark>.com'</span>);</div><div class="r cur"><span class="ln">41,203,122</span><span class="kw">INSERT INTO</span> users <span class="kw">VALUES</span> (<span class="num">41203121</span>, <span class="str">'Ivy Moreau'</span>, <span class="str">'ivy@<mark>example</mark>.com'</span>);</div><div class="r"><span class="ln">41,203,123</span><span class="kw">INSERT INTO</span> users <span class="kw">VALUES</span> (<span class="num">41203122</span>, <span class="str">'Dev Patel'</span>, <span class="str">'dev@<mark>example</mark>.com'</span>);</div><div class="r"><span class="ln">41,203,124</span><span class="kw">INSERT INTO</span> users <span class="kw">VALUES</span> (<span class="num">41203123</span>, <span class="str">'Noor Haddad'</span>, <span class="str">'noor@<mark>example</mark>.com'</span>);</div><div class="r"><span class="ln">41,203,125</span><span class="kw">INSERT INTO</span> users <span class="kw">VALUES</span> (<span class="num">41203124</span>, <span class="str">'Tom Berg'</span>, <span class="str">'tom@<mark>example</mark>.com'</span>);</div><div class="r"><span class="ln">41,203,126</span><span class="kw">INSERT INTO</span> users <span class="kw">VALUES</span> (<span class="num">41203125</span>, <span class="str">'Lena Vogel'</span>, <span class="str">'lena@<mark>example</mark>.com'</span>);</div><div class="r"><span class="ln">41,203,127</span><span class="kw">INSERT INTO</span> users <span class="kw">VALUES</span> (<span class="num">41203126</span>, <span class="str">'Ken Ito'</span>, <span class="str">'ken@<mark>example</mark>.com'</span>);</div><div class="r"><span class="ln">41,203,128</span><span class="kw">INSERT INTO</span> users <span class="kw">VALUES</span> (<span class="num">41203127</span>, <span class="str">'Asha Rao'</span>, <span class="str">'asha@<mark>example</mark>.com'</span>);</div></div>
+<div class="sb"><span>Ln 41,203,122</span><span style="margin-left:auto"><strong>80,064,000</strong> lines</span><strong>10.77 GB</strong><span>SQL</span></div></div>
+</body></html>
